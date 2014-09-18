@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class c2_34{
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		int tasa, pobla, pobla1, pobla2, pobla3, pobla4, pobla5;
+
+		System.out.printf("Ingresa la población mundial: ");
+		pobla = entrada.nextInt();
+		System.out.printf("Ingresa la tasa de población mundial: ");
+		tasa = entrada.nextInt();
+
+		pobla1 = pobla + tasa;
+		pobla2 = pobla1 + tasa;
+		pobla3 = pobla2 + tasa;
+		pobla4 = pobla3 + tasa;
+		pobla5 = pobla4 + tasa;
+		
+		System.out.printf("La poblacion dentro de un año será: %d personas en el mundo", pobla1);
+		System.out.printf("\nLa poblacion dentro de 2 años será: %d personas en el mundo", pobla2);
+		System.out.printf("\nLa poblacion dentro de 3 años será: %d personas en el mundo", pobla3);
+		System.out.printf("\nLa poblacion dentro de 4 años será: %d personas en el mundo", pobla4);
+		System.out.printf("\nLa poblacion dentro de 5 años será: %d personas en el mundo", pobla5);
+
+	}
+}
