@@ -1,0 +1,77 @@
+import java.util.Scanner;
+public class c2_32{
+	public static void main(String[] args){
+
+		Scanner entrada = new Scanner(System.in);
+		int a, b, c, d, e;
+		int f = 0;
+		int g = 0;
+		int h = 0;
+
+		System.out.print("Ingresa un numero: ");
+		a = entrada.nextInt();
+		System.out.print("Ingresa otro numero: ");
+		b = entrada.nextInt();
+		System.out.print("Ingresa otro numero: ");
+		c = entrada.nextInt();
+		System.out.print("Ingresa otro numero: ");
+		d = entrada.nextInt();
+		System.out.print("Ingresa otro numero: ");
+		e = entrada.nextInt();
+
+		if( a == 0 ){
+			f = f + 1;
+		}
+		if( a > 0 ){
+			g = g + 1;
+		}
+		if( a < 0 ){
+			h = h + 1;
+		}
+
+		if( b == 0 ){
+			f = f + 1;
+		}
+		if( b > 0 ){
+			g = g + 1;
+		}
+		if( b < 0 ){
+			h = h + 1;
+		}
+
+		if( c == 0 ){
+			f = f + 1;
+		}
+		if( c > 0 ){
+			g = g + 1;
+		}
+		if( c < 0 ){
+			h = h + 1;
+		}
+
+		if( d == 0 ){
+			f = f + 1;
+		}
+		if( d > 0 ){
+			g = g + 1;
+		}
+		if( d < 0 ){
+			h = h + 1;
+		}
+
+		if( e == 0 ){
+			f = f + 1;
+		}
+		if( e > 0 ){
+			g = g + 1;
+		}
+		if( e < 0 ){
+			h = h + 1;
+		}
+
+		System.out.printf("Cantidad de números positivos: %d", g);
+		System.out.printf("\nCantidad de números negativos: %d", h);
+		System.out.printf("\nCantidad de números que son igual a 0 = %d", f);
+
+	}
+}
