@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class c2_24{
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		int a, b, c, d, e, mayor, menor;
+
+		System.out.print("Introduce un número: ");
+		a = entrada.nextInt();
+		System.out.print("\nIntroduce otro número: ");
+		b = entrada.nextInt();
+		System.out.print("\nIntroduce otro número: ");
+		c = entrada.nextInt();
+		System.out.print("\nIntroduce otro número: ");
+		d = entrada.nextInt();
+		System.out.print("\nIntroduce otro número: ");
+		e = entrada.nextInt();
+
+		mayor = a;
+		if( b > mayor ){
+			mayor = b;
+		}
+		if( c > mayor ){
+			mayor = c;
+		}
+		if( d > mayor ){
+			mayor = d;
+		}
+		if( e > mayor ){
+			mayor = e;
+		}
+
+		menor = a;
+		if( b < menor ){
+			menor = b;
+		}
+		if( c < menor ){
+			menor = c;
+		}
+		if( d < menor ){
+			menor = d;
+		}
+		if( e < menor ){
+			menor = e;
+		}
+		
+		System.out.printf("\nEl mayor de los números es: %d", mayor);
+		System.out.printf("\nEl menor de los números es: %d", menor);
+
+	}
+}
