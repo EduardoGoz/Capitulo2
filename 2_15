@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class CalculadoraAritmetica{
+	public static void main(String[] args){
+		Scanner entrada = new Scanner(System.in);
+		int x = 0;
+		int y = 0;
+		int suma, resta, producto;
+		float division;
+
+		System.out.print("Ingresa un numero: ");
+		x = entrada.nextInt();
+		System.out.print("Ingresa otro numero: ");
+		y = entrada.nextInt();
+
+		suma = x + y;
+		resta = x - y;
+		division = x / y;
+		producto = x * y;
+
+
+		System.out.printf("\nLa suma de los numero es: %d", suma);
+		System.out.printf("\nLa resta de los numero es: %d", resta);
+		System.out.printf("\nEl cociente de los numero es: %f", division);
+		System.out.printf("\nEl producto de los numero es: %d", producto);
+
+
+
+	}
+}
