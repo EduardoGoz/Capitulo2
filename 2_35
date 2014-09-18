@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class c2_35{
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		double kiloDias, costoGaso, kiloGaso, costoEs, peajeDia, totalGasto, ahorroTotal, barce, valencia, sevilla, ahorro1, ahorro2, ahorro3;
+
+		System.out.print("Ingresa el total de kilometros conducidos por día: ");
+		kiloDias = entrada.nextFloat();
+		System.out.print("\nIngresa el costo del litro de gasolina: ");
+		costoGaso = entrada.nextFloat();
+		System.out.print("\nIngresa el promedio de kilometros por litros de la gasolina: ");
+		kiloGaso = entrada.nextFloat();
+		System.out.print("\nIngresa el costo total de las cuaotas de estaconamiento: ");
+		costoEs = entrada.nextFloat();
+		System.out.print("\nIngresa el costo total del peaje por día: ");
+		peajeDia = entrada.nextFloat();
+
+		totalGasto = ((kiloDias / kiloGaso) * costoGaso) + costoEs + peajeDia;
+		barce = 15 * 17.8;
+		ahorro1 = totalGasto - barce;
+		valencia = 17.8 * 19;
+		ahorro2 = totalGasto - valencia;
+		sevilla = 17.8 * 17;
+		ahorro3 = totalGasto - sevilla;
+
+		System.out.printf("\nEl costo total detu viaje es: %f", totalGasto);
+		System.out.printf("\nEl costo del viaje a Barcelona es de 15 euros, es decir, %f pesos mexicanos y el ahorro es: %f", barce, ahorro1);
+		System.out.printf("\nEl costo del viaje a valencia es de 19 euros, es decir, %f pesos mexicanos y el ahorro es: %f", valencia, ahorro2);
+		System.out.printf("\nEl costo del viaje a Sevilla es de 15 euros, es decir, %f pesos mexicanos y el ahorro es: %f", sevilla, ahorro3);
+
+		
+
+	}
+}
