@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class c2_28{
+	public static void main(String[] args){
+		Scanner entrada = new Scanner(System.in);
+		int x;
+		double dia, cir, are;
+
+		System.out.print("Ingresa el valor entero del radio (Debe ser u número entero): ");
+		x = entrada.nextInt();
+
+		dia = x * 2;
+		cir = (2 * Math.PI) * x;
+		are = (x * x) * Math.PI ;
+
+		System.out.printf("El diametro del circulo es: %f", dia);
+		System.out.printf("\nLa circunferencia del circulo es: %f", cir);
+		System.out.printf("\nEl área del circulo es: %f", are);
+
+	}
+}
