@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class c_17{
+	public static void main(String[] args){
+		Scanner entrada = new Scanner(System.in);
+		int x, y, z, suma, producto, menor, mayor;
+		double spromedio, promedio;
+
+		System.out.print("Ingresa un numero: ");
+		x = entrada.nextInt();
+		System.out.print("Ingresa otro numero: ");
+		y = entrada.nextInt();
+		System.out.print("Ingresa otro numero: ");
+		z = entrada.nextInt();
+
+
+		if( x > y ){
+			if( x > z ){
+				mayor = x;
+				menor = y;
+			}
+			else{
+				mayor = z;
+				menor = y;
+			}
+		}
+		else{
+			if( y > z ){
+				mayor = y;
+				menor = x;
+			}
+			else{
+				mayor = z;
+				menor = x;
+			}
+		}
+
+		suma = x + y + z;
+		promedio = suma / 3;
+		producto = x * y * z;
+
+		System.out.printf("La suma de los números es: %d", suma);
+		System.out.printf("\nEl promedio de los números es: %f", promedio);
+		System.out.printf("\nEl producto es de los números es: %d", producto);
+		System.out.printf("\nEl mayor de los números es: %d", mayor);
+		System.out.printf("\nEl menor de los números es: %d", menor);
+	}
+}
