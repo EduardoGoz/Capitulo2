@@ -1,0 +1,63 @@
+public class c2_31{
+	public static void main(String[] args) {
+
+		int a, b, c, d, e, f, g, h, i, j, k, a2, b2, c2, d2, e2, f2, g2, h2, i2, j2, k2, a3, b3, c3, d3, e3, f3, g3, h3, i3, j3, k3;
+
+		a = 0;
+		a2 = a * a;
+		a3 = a2 * a;
+
+		b = 1;
+		b2 = b * b;
+		b3 = b2 * b;
+
+		c = 2;
+		c2 = c * c;
+		c3 = c2 * c;
+
+		d = 3;
+		d2 = d * d;
+		d3 = d2 * d;
+
+		e = 4;
+		e2 = e * e;
+		e3 = e2 * e;
+
+		f = 5;
+		f2 = f * f;
+		f3 = f2 * f;
+
+		g = 6;
+		g2 = g * g;
+		g3 = g2 * g;
+
+		h = 7;
+		h2 = h * h;
+		h3 = h2 * h;
+
+		i = 8;
+		i2 = i * i;
+		i3 = i2 * i;
+
+		j = 9;
+		j2 = j * j;
+		j3 = j2 * j;
+
+		k = 10;
+		k2 = k * k;
+		k3 = k2 * k;
+
+		System.out.print("Número    Cuadrado    Cubo");
+		System.out.printf("\n%d          %d           %d",a ,a2 ,a3);
+		System.out.printf("\n%d          %d           %d",b ,b2 ,b3);
+		System.out.printf("\n%d          %d           %d",c ,c2 ,c3);
+		System.out.printf("\n%d          %d           %d",d ,d2 ,d3);
+		System.out.printf("\n%d          %d          %d",e ,e2 ,e3);
+		System.out.printf("\n%d          %d          %d",f ,f2 ,f3);
+		System.out.printf("\n%d          %d          %d",g ,g2 ,g3);
+		System.out.printf("\n%d          %d          %d",h ,h2 ,h3);
+		System.out.printf("\n%d          %d          %d",i ,i2 ,i3);
+		System.out.printf("\n%d          %d          %d",j ,j2 ,j3);
+		System.out.printf("\n%d         %d         %d",k ,k2 ,k3);
+	}
+}
